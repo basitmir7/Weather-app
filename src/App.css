@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+.App {
+  text-align: center;
+}
+.main {
+  height: 100vh;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(111, 111, 111),
+    rgb(18, 18, 18),
+    0.7
+  );
+  padding: 20px;
+  background-image: url("./assets/normal.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: ease-in-out 300ms;
+}
+.main.warm {
+  background: url("./assets/warm.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: ease-in-out 300ms;
+}
+
+.search-box {
+  width: 100%;
+  padding: 17px;
+  margin-bottom: 100px;
+}
+.search-bar {
+  display: block;
+  width: 100%;
+  font-size: 15px;
+  padding: 15px;
+  border: none;
+  outline: none;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 0 0 16px 16px;
+  box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
+}
+.search-bar:focus {
+  background: white;
+}
+.location-box .location {
+  font-size: 45px;
+  color: #fff;
+  font-weight: 500;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+
+.location-box .date {
+  font-size: 20px;
+  color: #fff;
+  font-style: italic;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+}
+.weather-box .temp {
+  position: relative;
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.4);
+  margin: 30px auto;
+  border-radius: 16px;
+  padding: 15px 25px;
+  font-size: 85px;
+  font-weight: 400;
+  text-shadow: 3px 6px rgba(50, 50, 70, 0.5);
+  box-shadow: 3px 6px rgba(0, 0, 0, 0.2);
+}
+.weather-box .weather {
+  color: #fff;
+  font-size: 55px;
+  font-weight: 400;
+  text-shadow: 3px 6px rgba(50, 50, 70, 0.5);
+}
+
+.container {
+  animation: slo-mo 0.2s;
+  transition: all 0.3s;
+}
+
+@keyframes slo-mo {
+  0% {
+    transform: scale(0.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
